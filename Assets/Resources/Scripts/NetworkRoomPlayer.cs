@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-internal class NetworkRoomPlayer : NetworkBehaviour
+public class NetworkRoomPlayer : NetworkBehaviour
 {
     [Header("UI")]
     [SerializeField] private GameObject lobbuUI = null;
@@ -59,13 +59,13 @@ internal class NetworkRoomPlayer : NetworkBehaviour
     public void HandleReadyStatusChanged(bool oldValue, bool newValue) => UpdateDiaplay();
     public void HandleDisplayNameChanged(string oldValue, string newValue) => UpdateDisplay();
 
-    private void UpdateDiaplay()
+    private void UpdateDisplay()
     {
         if (!hasAuthority)
         {
             foreach (var player in Room.RoomPLayers)
             {
-                if (player.hasAuthority();
+                if (player.hasAuthority());
                 break;
             }
             return;
