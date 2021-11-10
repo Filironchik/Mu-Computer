@@ -33,6 +33,8 @@ public class MenuMeneger : MonoBehaviour
         networkManager.StartClient();
         menuPanel.SetActive(false);
         gamePanel.SetActive(true);
+
+
     }
 
     public void Stop()

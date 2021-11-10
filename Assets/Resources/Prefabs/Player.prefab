@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3248352812736034454}
   - component: {fileID: 6598878535364284863}
   - component: {fileID: 3248352812736034455}
-  - component: {fileID: 7576400007628661769}
   - component: {fileID: 5900564648714887908}
   - component: {fileID: 5250972525032561581}
   - component: {fileID: 2230278935341941855}
+  - component: {fileID: 7166429063574205901}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -94,7 +94,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3248352812736034452}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -113,27 +113,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4106245, y: 1.2953877}
   m_EdgeRadius: 0
---- !u!50 &7576400007628661769
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3248352812736034452}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &5900564648714887908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,10 +147,10 @@ MonoBehaviour:
   clientAuthority: 0
   sendInterval: 0.05
   syncPosition: 1
-  syncRotation: 1
+  syncRotation: 0
   syncScale: 0
   interpolatePosition: 1
-  interpolateRotation: 1
+  interpolateRotation: 0
   interpolateScale: 0
   bufferTimeMultiplier: 1
   bufferSizeLimit: 64
@@ -194,4 +173,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  Speed: 10
+--- !u!114 &7166429063574205901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248352812736034452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5d31e204617e540a302bfb63fe07f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  role: 0
+  Alive: 0
